@@ -16,7 +16,7 @@ npm install ipnation
 ## Basic use
 
 ```
-> ipnation = require('ipnation');
+> var ipnation = require('ipnation');
 > ipnation.fromIPv4('50.19.117.93').then(function(res) {
   console.log(res);
 });
