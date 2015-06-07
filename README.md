@@ -62,20 +62,20 @@ This project is based on the publicly available dataset on http://ip2nation.com.
 
 #### `ipv4_iso3`
 
-|   |      |                    |
-| - | ---- | ------------------ |
-| * | ip   | `UNSIGNED INTEGER` |
-|   | iso3 | `CHAR(3)`          |
+|     | field | type definition    |
+| --- | ----- | ------------------ |
+|  *  | ip    | `UNSIGNED INTEGER` |
+|     | iso3  | `CHAR(3)`          |
 
 `ip` is the dot-decimal IPv4 address converted to binary representation ([`inet_aton`](http://linux.die.net/man/3/inet_aton)) then unpacked to a long integer.
 
 #### `iso_nations`
 
-|   |            |                |
-| - | ---------- | -------------- |
-|   | iso2       | `CHAR(2)`      |
-| * | iso3       | `CHAR(3)`      |
-|   | iso_nation | `VARCHAR(255)` |
+|     | field      | type definition    |
+| --- | ---------- | -------------- |
+|     | iso2       | `CHAR(2)`      |
+|  *  | iso3       | `CHAR(3)`      |
+|     | iso_nation | `VARCHAR(255)` |
 
 #### Persistence
 
