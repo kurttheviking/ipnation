@@ -1,7 +1,7 @@
 ipnation
 ========
 
-Convert an [IPv4](http://en.wikipedia.org/wiki/IPv4) address to an [ISO Nation](http://en.wikipedia.org/wiki/ISO_3166-1)
+Quickly convert an [IPv4](http://en.wikipedia.org/wiki/IPv4) address to an [ISO Nation](http://en.wikipedia.org/wiki/ISO_3166-1)
 
 
 ## Install
@@ -39,7 +39,7 @@ Query the IPv4 address space for a matching ISO nation code.
 
 *Returns*
 
-Returns a [Promise](https://www.npmjs.com/package/bluebird) that resolves to the ISO code set for the address; the promise is rejected with an error if the address is malformed or invalid
+[Promise](https://www.npmjs.com/package/bluebird) that resolves to an ISO code set for the address; the promise is rejected with an error if the address is malformed or invalid
 
 *Example*
 
@@ -58,7 +58,7 @@ Returns a [Promise](https://www.npmjs.com/package/bluebird) that resolves to the
 
 ## Data
 
-This project is based on the publicly available dataset on http://ip2nation.com. The source data has been migrated to the following schema:
+This project is based on the publicly available dataset at [ip2nation.com](http://www.ip2nation.com). The source data has been migrated to the following schema:
 
 #### `ipv4_iso3`
 
@@ -77,11 +77,12 @@ This project is based on the publicly available dataset on http://ip2nation.com.
 |  *  | iso3       | `CHAR(3)`      |
 |     | iso_nation | `VARCHAR(255)` |
 
+
 #### Persistence
 
-All data resides in a local SQLite3 database which provides portable storage, efficient indexing, and fast querying. If you are receiving build warnings or errors from SQLite, consult the [`node-sqlite3`](https://github.com/mapbox/node-sqlite3) documentation.
+All data resides in a local SQLite3 database which provides portable storage, efficient indexing, and fast querying. If you receive build warnings/errors from SQLite, consult the [`node-sqlite3`](https://github.com/mapbox/node-sqlite3) documentation.
 
-Nation data is based on [ISO 3166-1](http://en.wikipedia.org/wiki/ISO_3166-1) available in the source dataset with a few additions necessary to achieve internal consistency:
+Nation data is based on [ISO 3166-1 country codes](http://en.wikipedia.org/wiki/ISO_3166-1) available in the source dataset with a few additions necessary to achieve internal consistency:
 
 - `AP`; `APN`; Asia/Pacific Region
 - `BQ`; `BES`; Bonaire, Sint Eustatius and Saba
@@ -94,7 +95,7 @@ Nation data is based on [ISO 3166-1](http://en.wikipedia.org/wiki/ISO_3166-1) av
 - `SS`, `SSD`, South Sudan
 - `SX`, `SXM`, Sint Maarten (Dutch)
 
-Currently, some addresses may resolve to an unknown nation response:
+Currently, a few addresses may resolve to an unknown nation response:
 
 ```
 {
@@ -117,7 +118,7 @@ To get the coverage report:
 npm run coverage
 ```
 
-Detailed reports are available in the `./artifacts` directory. This project maintains 100% coverage of function and 80%+ coverage of all branches.
+Detailed reports are available in the `./artifacts` directory. This project maintains 100% coverage of functions and 80%+ coverage of branches.
 
 
 ## Contribute
