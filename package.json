@@ -1,0 +1,45 @@
+{
+  "name": "ipnation",
+  "version": "0.1.0",
+  "description": "Quickly convert an IP address to ISO nation data",
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kurttheviking/ipv4-to-nation"
+  },
+  "keywords": [
+    "ip address",
+    "ipv4",
+    "iso",
+    "country codes"
+  ],
+  "author": {
+    "name": "kurttheviking",
+    "email": "kurttheviking@outlook.com"
+  },
+  "contributors": [
+    {
+      "name": "kurttheviking",
+      "email": "kurttheviking@outlook.com"
+    }
+  ],
+  "scripts": {
+    "coverage": "./node_modules/istanbul/lib/cli.js cover --dir=artifacts --report=html _mocha ./test -- --recursive",
+    "test": "node node_modules/mocha/bin/mocha ./test --recursive"
+  },
+  "bugs": {
+    "url": "https://github.com/kurttheviking/ipnation/issues"
+  },
+  "homepage": "https://github.com/kurttheviking/ipnation",
+  "dependencies": {
+    "bluebird": "2.9.27",
+    "inet": "0.0.3",
+    "sqlite3": "3.0.8"
+  },
+  "devDependencies": {
+    "chai": "2.3.0",
+    "istanbul": "0.3.14",
+    "mocha": "2.2.5"
+  }
+}
