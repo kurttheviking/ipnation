@@ -1,6 +1,8 @@
 ipnation
 ========
 
+[![Build Status](https://travis-ci.org/kurttheviking/ipnation.svg?branch=master)](https://travis-ci.org/kurttheviking/ipnation)
+
 Quickly convert an [IPv4](http://en.wikipedia.org/wiki/IPv4) address to an [ISO Nation](http://en.wikipedia.org/wiki/ISO_3166-1)
 
 
