@@ -83,16 +83,16 @@ All data resides in a local SQLite3 database which provides portable storage, ef
 
 Nation data is based on [ISO 3166-1](http://en.wikipedia.org/wiki/ISO_3166-1) available in the source dataset with a few additions necessary to achieve internal consistency:
 
-- AP; APN; Asia/Pacific Region
-- BQ; BES; Bonaire, Sint Eustatius and Saba
-- CW; CUW; Curacao
-- EU, EUR, Europe
-- GG; GGY; Guernsey
-- IM; IMN; Isle of Man
-- JE, JEY, Jersey
-- MF, MAF, Saint Martin (French)
-- SS, SSD, South Sudan
-- SX, SXM, Sint Maarten (Dutch)
+- `AP`; `APN`; Asia/Pacific Region
+- `BQ`; `BES`; Bonaire, Sint Eustatius and Saba
+- `CW`; `CUW`; Curacao
+- `EU`, `EUR`, Europe
+- `GG`; `GGY`; Guernsey
+- `IM`; `IMN`; Isle of Man
+- `JE`, `JEY`, Jersey
+- `MF`, `MAF`, Saint Martin (French)
+- `SS`, `SSD`, South Sudan
+- `SX`, `SXM`, Sint Maarten (Dutch)
 
 Note that some IPv4 addresses may resolve to an unknown nation response:
 
