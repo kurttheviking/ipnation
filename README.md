@@ -94,7 +94,7 @@ Nation data is based on [ISO 3166-1](http://en.wikipedia.org/wiki/ISO_3166-1) av
 - `SS`, `SSD`, South Sudan
 - `SX`, `SXM`, Sint Maarten (Dutch)
 
-Note that some IPv4 addresses may resolve to an unknown nation response:
+Currently, some addresses may resolve to an unknown nation response:
 
 ```
 {
