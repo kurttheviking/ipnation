@@ -63,7 +63,7 @@ This project is based on the publicly available dataset on http://ip2nation.com.
 #### `ipv4_iso3`
 
 |     | field | type definition    |
-| --- | ----- | ------------------ |
+| --- | :---- | :----------------- |
 |  *  | ip    | `UNSIGNED INTEGER` |
 |     | iso3  | `CHAR(3)`          |
 
@@ -72,7 +72,7 @@ This project is based on the publicly available dataset on http://ip2nation.com.
 #### `iso_nations`
 
 |     | field      | type definition    |
-| --- | ---------- | -------------- |
+| --- | :--------- | :------------- |
 |     | iso2       | `CHAR(2)`      |
 |  *  | iso3       | `CHAR(3)`      |
 |     | iso_nation | `VARCHAR(255)` |
