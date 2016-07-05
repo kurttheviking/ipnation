@@ -35,7 +35,7 @@
   "dependencies": {
     "bluebird": "2.9.27",
     "inet": "0.0.3",
-    "sqlite3": "3.0.8"
+    "sqlite3": "3.1.4"
   },
   "devDependencies": {
     "chai": "2.3.0",
